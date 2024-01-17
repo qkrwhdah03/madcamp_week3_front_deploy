@@ -1,0 +1,59 @@
+.project-detail-container {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .project-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    vertical-align: middle;
+  }
+  
+  .divider {
+    border: 1px solid #ddd;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .list-item {
+    margin-bottom: 8px;
+  }
+
+  .delete-button {
+    padding: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    background-color: #ef3f3f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    vertical-align: middle;
+  }
+  
+  .add-button {
+    padding: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    background-color: #03C75A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    vertical-align: middle;
+  }
+  
+  .time-table {
+    width: 100%;
+    margin-top: 8px;
+    border-collapse: collapse;
+  }
+  
+  .time-table th, .time-table td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+

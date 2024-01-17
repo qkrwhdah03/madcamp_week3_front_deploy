@@ -1,0 +1,214 @@
+.profile_wrapper {
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #03C75A;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.user_info_wrapper {
+    align-items: center;
+}
+
+p {
+    /* 수평 중앙 정렬하기 */
+    text-align: center;
+    color : #000000;
+}
+
+.date_wrapper{
+    display: grid;
+    width: 75%;
+    margin: auto;
+    grid-template-columns: repeat(8, minmax(2vh, 0.5fr));
+    grid-template-rows: repeat(1, minmax(3vh, 1fr));
+    gap: 0px;
+    position: relative;
+    padding: auto;
+    background-color: #03C75A ;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.date_text{
+    display: flex;
+    align-items: center; /* 세로로 중앙 정렬을 위한 속성 추가 */
+    justify-content: center; /* 가로로 중앙 정렬을 위한 속성 추가 */
+    text-align: center;
+    font-size: 0.8vw;
+    color: #FFF;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.schedule_manager_wrapper{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 수직으로 중앙 정렬 */
+    justify-content: center; /* 수평으로 중앙 정렬 */
+}
+
+.schedule_manager_text{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color : #FFF;
+}
+
+.schedule_wrapper {
+    display: grid;
+    width: 75%;
+    margin: auto;
+    grid-template-columns: repeat(8, minmax(2vh, 0.5fr));
+    grid-template-rows: repeat(24, minmax(2.5vh, 0.5fr));
+    gap: 0px;
+    border: 1px solid #D9D9D9;
+    position: relative;
+}
+
+.grid_hour {
+    color: #000;
+    font-size: 0.7vw;
+    border: 1px solid #D9D9D9;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.grid_item {
+    background-color: #FFFFFF;
+    width: auto;
+    height: auto;
+    border: 1px solid #D9D9D9;
+    
+}
+
+.rectangle {
+    display: flex;
+    align-items: center; /* 세로로 중앙 정렬을 위한 속성 추가 */
+    justify-content: center; /* 가로로 중앙 정렬을 위한 속성 추가 */
+    background-color: rgba(3, 199, 90, 0.5); 
+    border: 1px solid #03C75A;
+    font-size: 0.9vw;
+    text-align: center;
+}
+
+.rectangle:hover {
+    background-color: rgba(0, 105, 47, 0.5); 
+    border: 1px solid #03C75A;
+}
+
+
+.trash {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 수직으로 중앙 정렬 */
+    justify-content: center; /* 수평으로 중앙 정렬 */
+}
+
+.create_box_input {
+    display: flex;
+    margin-top: 5px;
+    gap: 5px;
+    width: 75%; /* 부모 컨테이너의 100% 너비로 설정 */
+}
+
+/* 입력 요소 스타일링 */
+.plan_name{
+    flex: 10;
+    width: 50%;
+    padding: 4px;
+    font-size: 12px;
+    border: 2px solid #D9D9D9;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.plan_len {
+    flex: 2;
+    width: 30%;
+    padding: 4px;
+    font-size: 12px;
+    border: 2px solid #D9D9D9;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}
+
+
+/* 버튼 스타일링 */
+.addblock {
+    flex: 0;
+    padding: 6px;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.addblock:hover {
+    background-color: #00692E;
+}
+
+
+/* 저장 버튼 스타일링 */
+.save_schedule_button {
+    width: 40px;
+    height: 30px;
+    background-color: #FFFFFF; /* 저장 버튼 배경색 */
+    color : #000;
+    border: none;
+    border-radius: 4px;
+}
+
+/* 저장 버튼에 호버 효과 추가 */
+.save_schedule_button:hover {
+    background-color: #00692E;
+    color: #FFF;
+}
+
+.todo_container {
+    margin-bottom: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 수직으로 중앙 정렬 */
+    justify-content: center; /* 수평으로 중앙 정렬 */
+}
+
+.todo_wrapper {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /*border: 1px solid #D0D0D0;*/
+    width: 80%;
+    max-height: 100px;
+    overflow: hidden; /* 초과한 부분 감춤 */
+    display: flex;
+    flex-direction: column; /* 세로로 쌓이도록 설정 */
+}
+
+.todo_wrapper_text{
+    color : #FFF;
+    font-Weight: 'bold';
+}
+
+.appointment_view{
+    color: #000;
+    padding: 8px;
+    background-color: #FFFFFF;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    flex: 1; /* 나머지 공간을 채우도록 설정 */
+}
+
+.appointment_list_wrapper{
+    overflow-y: scroll;
+    max-height: 250px; /* 스크롤 가능한 최대 높이 설정 */
+    padding: 10px;
+}
+
+.appointment_list_wrapper::-webkit-scrollbar {
+    width: 0.5em; /* 스크롤 바 너비 조절 */
+}
+
+.appointment_list_wrapper::-webkit-scrollbar-thumb {
+    background-color: #FFFFFF; /* 스크롤 바 색상 설정 */
+}

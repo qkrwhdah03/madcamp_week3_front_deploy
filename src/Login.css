@@ -1,0 +1,21 @@
+.button {
+    background: #03C75A;
+    color: white;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    height: 45px; /* 높이를 원하는 값으로 설정 */
+    margin-right: 8px; /* 우측 여백 추가 */
+  }
+  
+.button:hover {
+/* hover 시에 변경할 스타일 추가 */
+background: #028748;
+}
+
+.register :hover{
+background-color: #535353;
+}

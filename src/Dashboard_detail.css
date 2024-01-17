@@ -1,0 +1,13 @@
+.projectDetail{
+    flex: 3;
+    padding: 3vh;
+    overflow-y: auto;
+  }
+  
+  .projectDetail::-webkit-scrollbar {
+      width: 0.5em; /* 스크롤 바 너비 조절 */
+  }
+  
+  .projectDetail::-webkit-scrollbar-thumb {
+      background-color: #FFFFFF; /* 스크롤 바 색상 설정 */
+  }
